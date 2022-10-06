@@ -22,21 +22,28 @@ body    {
     display: flex;
     justify-content: space-between;
     background-color: #1f2937;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 75px;
+    padding-bottom: 75px;
 }
 
 .information    {
-    background-color: #f9faf8;
-    padding-top: 30px;
-    padding-bottom: 50px;
+    background-color: white;
+    padding-top: 40px;
+    padding-bottom: 75px;
 }
 
+.quote  {
+    background-color: #e5e7eb;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    padding-left: 250px;
+    padding-right: 250px;
+}
 
 /* ~sub containers~ */
 
 /* ~hero~ */
-.hero-text  {
+.hero-info  {
     flex: 1;
     padding-right: 32px;
 }
@@ -53,9 +60,10 @@ body    {
 /* ~information~ */
 .container-info-items    {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 75px;
-    padding-top: 30px;
+    padding-top: 40px;
 }
 .container-item  {
     display: flex;
@@ -70,6 +78,7 @@ body    {
     width: 165px;
     border-radius: 15px;
     border: 4px solid #3882f6;
+    margin: 8px;
 }
 
 /* ~item formatting~ */
@@ -83,16 +92,30 @@ button  {
     font-weight: bold;
 }
 
+/* ~quote~ */
+.quote-text {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.quote-attribution  {
+    padding-top: 15px;
+    font-size: larger;
+    font-weight: bold;
+    text-align: right;
+}
+
 /* ~text formatting~ */
 
 h1  {
     font-size: 48px;
-    font-weight: bolder;
+    font-weight: 800;
 }
 
 h2  {
     font-size: 36px;
-    font-weight: bolder;
+    font-weight: 800;
     text-align: center;
 }
 
@@ -113,7 +136,7 @@ p   {
     font-size: 18px;
 }
 
-a, .hero-paragraph, button, .image-text  {
+a, .hero-text, button, .image-text  {
     color: #e5e7eb;
     font-size: 18px;
 }
