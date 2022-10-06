@@ -15,7 +15,7 @@ body    {
     display: flex;
     justify-content: space-between;
     background-color: #1f2937;
-    padding-top: 8px;
+    padding-top: 16px;
 }
 
 .hero {
@@ -40,10 +40,22 @@ body    {
     padding-right: 250px;
 }
 
+.sign-up    {
+    background-color: white;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.footer {
+    background-color: #1f2937;
+    padding: 30px;
+    text-align: center;
+}
+
 /* ~sub containers~ */
 
 /* ~hero~ */
-.hero-info  {
+.hero-box  {
     flex: 1;
     padding-right: 32px;
 }
@@ -55,6 +67,11 @@ body    {
     justify-content: center;
     text-align: center;
     background-color: dimgray;
+}
+
+.hero-button {
+    width: 150px;
+    border: none;
 }
 
 /* ~information~ */
@@ -81,17 +98,6 @@ body    {
     margin: 8px;
 }
 
-/* ~item formatting~ */
-
-button  {
-    background-color: #3882f6;
-    padding: 8px 32px;
-    border-radius: 8px;
-    border: none;
-    margin-top: 10px;
-    font-weight: bold;
-}
-
 /* ~quote~ */
 .quote-text {
     font-size: 36px;
@@ -104,6 +110,35 @@ button  {
     font-size: larger;
     font-weight: bold;
     text-align: right;
+}
+
+/* ~sign-up~ */
+.action-box    {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3882f6;
+    border-radius: 8px;
+    padding-left: 115px;
+    padding-right: 115px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.action-button {
+    flex-shrink: 0;
+    width: 150px;
+    border: 2px solid #f9faf8;
+}
+
+/* ~item formatting~ */
+
+button  {
+    background-color: #3882f6;
+    height: 2.2em;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-weight: bold;
 }
 
 /* ~text formatting~ */
@@ -127,30 +162,30 @@ h1, h3  {
     color: #f9faf8;
 }
 
+h2, p   {
+    color: #1f2937;
+}
+
 a   {
     padding: 8px;
     text-decoration: none;
 }
 
-p   {
+p  {
     font-size: 18px;
 }
 
-a, .hero-text, button, .image-text  {
+a, button, .white-text  {
     color: #e5e7eb;
     font-size: 18px;
-}
-
-h2, p   {
-    color: #1f2937;
 }
 
 .header,
 .hero,
 .information,
-.signup,
+.sign-up,
 .footer  {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
 }
 
